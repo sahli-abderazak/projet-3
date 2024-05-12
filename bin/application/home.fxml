@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClientController">
+   <children>
+      <TableView fx:id="table" layoutX="155.0" layoutY="72.0" prefHeight="284.0" prefWidth="444.0">
+        <columns>
+          <TableColumn fx:id="timage" prefWidth="97.0" text="image" />
+            <TableColumn fx:id="tnom" prefWidth="65.0" text="marque" />
+            <TableColumn fx:id="tmodele" prefWidth="65.0" text="modele" />
+            <TableColumn fx:id="ttarif" prefWidth="212.0" text="tarif" />
+        </columns>
+      </TableView>
+      <Pane prefHeight="400.0" prefWidth="154.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="89.0" layoutX="23.0" layoutY="23.0">
+               <image>
+                  <Image url="@../../../../52120.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="19.0" layoutY="111.0" text="KARHABTI LOCATION" textFill="#f8f4f4" />
+            <Button layoutX="18.0" layoutY="200.0" mnemonicParsing="false" style="-fx-background-color: #2D3447;" text="ESPACE ADMIN" textFill="#f5ebeb" />
+            <Button layoutX="36.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleeSubmitButtonAction" style="-fx-background-color: #2D3447;" text="QUITTER" textFill="#f5ebeb" />
+         </children>
+      </Pane>
+      <Pane layoutX="151.0" prefHeight="69.0" prefWidth="450.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <Label layoutX="148.0" layoutY="21.0" prefHeight="17.0" prefWidth="179.0" text="PAGE D'ACCEUIL" textFill="#f8f4f4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Button layoutX="487.0" layoutY="361.0" mnemonicParsing="false" onAction="#export" prefHeight="25.0" prefWidth="99.0" text="selectioner" />
+   </children>
+</AnchorPane>
